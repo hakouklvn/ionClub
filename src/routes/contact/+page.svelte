@@ -1,7 +1,6 @@
 <script>
 	import { Button, Dropzone, Helper, Input, Label, Textarea } from 'flowbite-svelte';
-
-	import { UploadOutline } from 'flowbite-svelte-icons';
+	import { onDestroy, onMount } from 'svelte';
 
 	let textareaprops = {
 		id: 'message',
@@ -10,6 +9,12 @@
 		rows: 6,
 		placeholder: 'Why do you want to join us'
 	};
+
+	let windowWidth = window.innerWidth;
+	const handleResize = () => (windowWidth = window.innerWidth);
+	onMount(() => window.addEventListener('resize', handleResize));
+	onDestroy(() => window.addEventListener('resize', handleResize));
+
 	let value = [];
 	const dropHandle = (event) => {
 		value = [];
@@ -52,8 +57,8 @@
 	};
 </script>
 
-<div class="flex gap-3 border rounded-lg border-grey-300">
-	<form class="w-full flex flex-col mt-8 p-16 space-y-6" action="#">
+<div class="lg:flex gap-3 lg:border lg:rounded-lg lg:border-grey-300">
+	<form class="w-full flex flex-col lg:mt-8 lg:p-16 mt-2 p-4 space-y-6" action="#">
 		<h3 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Lets work togother</h3>
 		<p class="text-grey-400 font-light text-md">
 			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit reiciendis cum accusantium
@@ -132,7 +137,9 @@
 
 		<Button type="submit" class="w-full">Send your message</Button>
 	</form>
-	<div class="w-full">
-		<img class="rounded-lg object-contain" src="departement.jpg" alt="school" />
-	</div>
+	{#if windowWidth > 768}
+		<div class="w-full lg:visible sm:invisible">
+			<img class="rounded-lg object-contain" src="departement.jpg" alt="school" />
+		</div>
+	{/if}
 </div>

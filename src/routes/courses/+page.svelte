@@ -19,16 +19,20 @@
 
 <div class="flex justify-between mb-8">
 	<div class="title">
-		<h1 class="text-4xl font-bold">Learning paths</h1>
+		<h1 class="text-xl lg:text-4xl font-bold">Learning paths</h1>
 		<p class="text-sm font-light">Choose the course you're interested in</p>
 	</div>
-	<div class="btns">
-		<Button on:click={() => loadModules(1)} outline={semesterSelected != 1}>semester 1</Button>
-		<Button on:click={() => loadModules(2)} outline={semesterSelected != 2}>semester 2</Button>
+	<div class="">
+		<Button size="xs" on:click={() => loadModules(1)} outline={semesterSelected != 1}>
+			semester 1
+		</Button>
+		<Button size="xs" on:click={() => loadModules(2)} outline={semesterSelected != 2}>
+			semester 2
+		</Button>
 	</div>
 </div>
 
-<div class="grid grid-cols-3">
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-3">
 	{#each data.modules as module}
 		<Card>
 			<GiftBoxSolid class="w-7 h-7 mb-3 text-gray-500 dark:text-gray-400" />

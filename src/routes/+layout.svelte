@@ -35,7 +35,7 @@
 	</NavUl>
 </Navbar>
 
-<div class="p-16">
+<div class="lg:p-16 p-4">
 	<slot />
 </div>
 
