@@ -1,33 +1,14 @@
-<div class="benefit">
-	<div class="icon">@</div>
-	<div class="title">World-class talent</div>
-	<div class="text">
+<script lang="ts">
+	import { DiscordSolid } from 'flowbite-svelte-icons';
+</script>
+
+<div class="flex flex-col place-items-start">
+	<div class=" rounded-full p-3 bg-blue-800">
+		<DiscordSolid class="w-5 h-5 text-blue-300" />
+	</div>
+	<h1 class="text-xl font-bold my-4">Business Automation</h1>
+	<p class="text-gray font-sm font-light">
 		From graphic design to UX/UI, our community is home to the world’s leading designers and
 		creative agencies.
-	</div>
+	</p>
 </div>
-
-<style>
-	.benefit {
-		display: flex;
-		flex-direction: column;
-		margin: 1.5rem;
-	}
-
-	.icon {
-	}
-
-	.title {
-		font-size: 22px;
-		font-weight: 600;
-		background: lightblue;
-		width: fit-content;
-		margin: 0.5rem 0;
-	}
-
-	.text {
-		font-size: 15px;
-		font-weight: 400;
-		width: 60%;
-	}
-</style>

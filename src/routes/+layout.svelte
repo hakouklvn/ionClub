@@ -5,9 +5,6 @@
 		NavLi,
 		NavUl,
 		Footer,
-		FooterBrand,
-		FooterLinkGroup,
-		FooterLink,
 		FooterCopyright,
 		NavHamburger,
 		FooterIcon
@@ -40,15 +37,6 @@
 </div>
 
 <Footer footerType="logo" class="bottom-0 w-full">
-	<div class="sm:flex sm:items-center sm:justify-between">
-		<FooterBrand href="https://flowbite.com" src="/logo.png" alt="Flowbite Logo" name="" />
-		<FooterLinkGroup
-			ulClass="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
-		>
-			<FooterLink href="/about">About</FooterLink>
-			<FooterLink href="/contact">Contact</FooterLink>
-		</FooterLinkGroup>
-	</div>
 	<hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 	<div class="sm:flex sm:items-center sm:justify-between">
 		<FooterCopyright href="/" by="IoN™" />
