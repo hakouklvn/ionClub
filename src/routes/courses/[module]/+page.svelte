@@ -47,10 +47,11 @@
 						<Button
 							href={document.fileUrl}
 							target="_blank"
-							class="hover:bg-green-200 bg-green-100 text-green-700"
+							class="
+								 hover:bg-green-200 bg-green-100 text-green-700 dark:text-slate-800 dark:bg-green-300 hover:dark:bg-green-200"
 						>
 							View
-							<SearchOutline class="w-3 h-3 ml-3 text-green-500" />
+							<SearchOutline class="w-3 h-3 ml-3 text-green-500 dark:text-slate-800" />
 						</Button>
 					</TableBodyCell>
 				</TableBodyRow>

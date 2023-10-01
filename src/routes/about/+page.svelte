@@ -4,9 +4,11 @@
 
 <div class="flex flex-col lg:flex-row gap-3">
 	<div class="w-full">
-		<h1 class="w-2/3 font-bold text-2xl lg:text-6xl">We’re changing the way people connect.</h1>
+		<h1 class="w-2/3 font-bold text-2xl lg:text-6xl dark:text-white">
+			We’re changing the way people connect.
+		</h1>
 		<br />
-		<p class="lg:w-1/2 text-grey-400 font-light text-sm lg:text-md">
+		<p class="lg:w-1/2 text-slate-500 dark:text-slate-400 font-light text-sm lg:text-md">
 			Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit.
 			Et labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim
 			nulla sunt mollit id pariatur in voluptate cillum. Eu voluptate tempor esse minim amet fugiat
@@ -26,16 +28,16 @@
 <br />
 <hr />
 
-<h1 class="w-1/2 font-bold text-xl lg:text-6xl mt-16">Our Goal.</h1>
+<h1 class="w-1/2 font-bold text-xl lg:text-6xl mt-16 dark:text-white">Our Goal.</h1>
 <br />
-<p class="lg:w-1/2 text-grey-400 font-light text-sm lg:text-md">
+<p class="lg:w-1/2 text-slate-500 dark:text-slate-400 font-light text-sm lg:text-md">
 	Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
 	labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla
 	sunt mollit id pariatur in voluptate cillum. Eu voluptate tempor esse minim amet fugiat veniam
 	occaecat aliqua.
 </p>
 <br />
-<p class="lg:w-1/2 text-grey-400 font-light text-sm lg:text-md">
+<p class="lg:w-1/2 text-slate-500 dark:text-slate-400 font-light text-sm lg:text-md">
 	Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
 	labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla
 	sunt mollit id pariatur in voluptate cillum. Eu voluptate tempor esse minim amet fugiat veniam
@@ -49,9 +51,9 @@
 	class="rounded-2xl"
 />
 
-<h1 class="w-1/2 font-bold text-xl lg:text-6xl mt-16">Our Team.</h1>
+<h1 class="w-1/2 font-bold text-xl lg:text-6xl mt-16 dark:text-white">Our Team.</h1>
 <br />
-<p class="lg:w-1/2 text-grey-400 font-light text-sm lg:text-md">
+<p class="lg:w-1/2 text-slate-500 dark:text-slate-400 font-light text-sm lg:text-md">
 	Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
 	labore commodo nulla aliqua proident mollit ullamco exercitation tempor.
 </p>
@@ -62,8 +64,8 @@
 	{#each [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] as _}
 		<div>
 			<Avatar size="xl">JL</Avatar>
-			<p class="font-bold lg:text-lg text-sm">FullName name</p>
-			<p class="text-sm text-grey-300 font-light">Member/CEO</p>
+			<p class="font-bold lg:text-lg text-sm dark:text-white">FullName name</p>
+			<p class="text-sm text-slate-500 dark:text-slate-400 font-light">Member/CEO</p>
 		</div>
 	{/each}
 </div>

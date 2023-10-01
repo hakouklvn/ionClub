@@ -7,7 +7,8 @@
 		Footer,
 		FooterCopyright,
 		NavHamburger,
-		FooterIcon
+		FooterIcon,
+		DarkMode
 	} from 'flowbite-svelte';
 	import { FacebookSolid, DiscordSolid, ImageSolid } from 'flowbite-svelte-icons';
 
@@ -16,23 +17,23 @@
 
 <Navbar let:hidden let:toggle>
 	<NavBrand href="/">
-		<img src="/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+		<img src="/logo.png" class="block dark:hidden mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+		<img src="/logo-dark.png" class="hidden dark:block mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
 	</NavBrand>
 	<div class="flex items-center md:order-2">
-		<img src="/logo2.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+		<DarkMode />
 	</div>
 	<NavHamburger on:click={toggle} />
 
 	<NavUl {hidden}>
 		<NavLi href="/" active={true}>Home</NavLi>
 		<NavLi href="/courses">Courses</NavLi>
-		<!-- <NavLi href="/events">Events</NavLi> -->
 		<NavLi href="/about">About</NavLi>
 		<NavLi href="/contact">Contact</NavLi>
 	</NavUl>
 </Navbar>
 
-<div class="lg:p-16 p-4">
+<div class="lg:p-16 p-4 dark:bg-slate-800">
 	<slot />
 </div>
 

@@ -19,8 +19,10 @@
 
 <div class="flex justify-between mb-8">
 	<div class="title">
-		<h1 class="text-xl lg:text-4xl font-bold">Learning paths</h1>
-		<p class="text-sm font-light">Choose the course you're interested in</p>
+		<h1 class="text-xl lg:text-4xl font-bold dark:text-white">Learning paths</h1>
+		<p class="text-sm font-light text-slate-500 dark:text-slate-400">
+			Choose the course you're interested in
+		</p>
 	</div>
 	<div class="">
 		<Button size="xs" on:click={() => loadModules(1)} outline={semesterSelected != 1}>

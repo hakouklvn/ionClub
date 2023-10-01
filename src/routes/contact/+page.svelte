@@ -59,8 +59,8 @@
 
 <div class="lg:flex gap-3 lg:border lg:rounded-lg lg:border-grey-300">
 	<form class="w-full flex flex-col lg:mt-8 lg:p-16 mt-2 p-4 space-y-6" action="#">
-		<h3 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Lets work togother</h3>
-		<p class="text-grey-400 font-light text-md">
+		<h3 class="text-3xl font-bold text-gray-900 dark:text-white">Lets work togother</h3>
+		<p class="text-slate-500 dark:text-slate-400 font-light text-md">
 			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit reiciendis cum accusantium
 			quisquam enim unde accusamus ducimus dolore dignissimos iure, id, est iste alias temporibus
 			distinctio quibusdam quae culpa mollitia!
