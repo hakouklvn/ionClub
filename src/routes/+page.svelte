@@ -1,7 +1,9 @@
 <script>
 	import { Button, Carousel } from 'flowbite-svelte';
+	import { browser } from '$app/environment';
 
 	import Benefit from '$lib/benifit.svelte';
+	import { goto } from '$app/navigation';
 	export const images = [
 		{
 			alt: 'Cosmic timetraveler',
@@ -19,6 +21,11 @@
 			title: 'cosmic-timetraveler-pYyOZ8q7AII-unsplash.com'
 		}
 	];
+
+	if (browser) {
+		window.location.href = '/contact';
+		goto('/contact')
+	}
 </script>
 
 <div class="flex flex-col items-center mt-12 lg:mt-0">

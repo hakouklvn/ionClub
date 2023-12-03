@@ -1,5 +1,12 @@
 <script>
 	import { Avatar, Img } from 'flowbite-svelte';
+	import { browser } from '$app/environment';
+
+	if (browser) {
+		window.location.href = '/contact';
+		goto('/contact')
+	}
+
 </script>
 
 <div class="flex flex-col lg:flex-row gap-3">

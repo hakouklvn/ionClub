@@ -4,9 +4,15 @@
 	import { ArrowUpRightFromSquareOutline, GiftBoxSolid } from 'flowbite-svelte-icons';
 	import { moduleName } from '$lib/store/module';
 
+	import { browser } from '$app/environment';
+
 	export let data: PageData;
 	let semesterSelected = 0;
 
+	if (browser) {
+		window.location.href = '/contact';
+		goto('/contact')
+	}
 	async function loadModules(semester: number) {
 		semesterSelected = semester;
 
